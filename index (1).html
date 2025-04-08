@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Patrick Figgs - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Patrick Figgs
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          pfiggs11@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          No personal number given
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="projects">Projects</a>
+          <a class="topmenu" href="reccomendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="02-43-38-360_512.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            What's up world, My name is Patrick Figgs! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            Currently I am a Senior Microsoft 365 and Exchnage engineer that has been working in this space for over 8 years
+            I have some Cisco Routing and Switching experince alon with VOIP and Systems Adminsitration
+            I am now learning how to become a Generative AI Devoloper with IBM at coursera
+          </p>
+      </div>
+    </section>
+
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>.5 years experience</p>
+        </div>
+        
+        <div class="skill">
+            <img src="file-7084005_640.png"/>
+            <h6>CSS</h6>
+            <p>.5 years experience</p>
+          </div>
+
+        <div class="skill">
+            <img src="logo-27046_640.png"/>
+            <h6>M365</h6>
+            <p>8 years Experince</p>
+          </div>
+
+          <div class="skill">
+            <img src="mail-2048128_640.png"/>
+            <h6>Microsoft Exchange</h6>
+            <p>8 years Experince</p>
+          </div>
+
+          <div class="skill">
+            <img src="computer-158784_1280.png"/>
+            <h6>Cisco Routing and Swtiching</h6>
+            <p>8 years Experince</p>
+          </div>
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Avaya IP phones and Cisco R&S</h3>
+            <ul>
+              <li>Implemented Avaya IP phones locally and across the country while installing and configuring Cisco Routers and Switches as well</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Microsoft Exchange Migrations</h3>
+            <ul>
+              <li>Implemetned and assited in Microsfot Exchnage 2010. 2016 and Exchange Online migrations across various enterprises as wella s Adminsistraion and Engineering before and after completion of these projects. Used those skills to transiton into M365 to act as a Global Admina nd other roles.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Generative AI Develper training</h3>
+            <ul>
+              <l>Currently learning the skills needed to become a professions Gen. AI Developer to grow my career and become an asset in the AI world as it grows</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Patrick has a real passion for learning and working with others.
+          He has been a great addition to our team to become and intergral part of our organisation
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          If you need a MS Exchange profesisons that not only contributes but trains people
+          Patrick will be who you need! he has a very kind and understanding way to help others on any level and field
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I have always had a good exerince with im with his abiltly to collaboorate, learn and excel in his positon.
+          It has really been a pleasure working with im and I hiope to in the future! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Thank you the feedback!--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
